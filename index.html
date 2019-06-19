@@ -10,3 +10,28 @@
       <script src="script.js"></script>
   </body>
 </html>
+<html>
+<body>
+  <p>Text Logo Maker</p>
+  <h>Letter One</h>
+  <input type="text" id="myInput1" oninput="myFunction()">
+  <p> </p>
+  <h>Letter Two</h>
+  <input type="text" id="myInput2" oninput="myFunction()">
+  <p> </p>
+  <button onclick="myFunction()">Click me</button>
+
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myInput1").value;
+      var y = document.getElementById("myInput2").value;
+      document.getElementById("demo").innerHTML = x + y;
+
+    }
+  </script>
+
+</body>
+
+</html>
